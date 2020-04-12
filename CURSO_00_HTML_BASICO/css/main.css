@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+.quitar-float{
+    float: none;
+}
+.espacio-arriba{
+    margin-top: 5px;
+}
