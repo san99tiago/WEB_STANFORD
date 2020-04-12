@@ -1,13 +1,33 @@
 body{
     background-color: aqua;
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 img{
     max-width: 100%;
+}
+a{
+    color: indigo;
+    font-weight: bold;
 }
 .quitar-float{
     float: none;
 }
 .espacio-arriba{
     margin-top: 5px;
+}
+.espacio-derecha{
+    margin-right: 1em;
+}
+.font-oswald{
+    font-family: 'Oswald', sans-serif;
+}
+.txt-grande{
+    font-size: 3em;
+}
+.txt-mediano{
+    font-size: 3em;
+}
+.color-azul{
+    color: blue;
 }
