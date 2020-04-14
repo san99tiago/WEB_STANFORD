@@ -12,3 +12,8 @@ div{
     margin: 5%;
     padding: 1%;
 }
+.letra-arial-grande{
+    font-family: Arial, sans-serif;
+    font-size:28px;
+    font-weight:bold;
+}
