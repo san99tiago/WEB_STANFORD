@@ -3,5 +3,10 @@ h1{
     text-align: center;
 }
 p{
-    color:#00FFFF;
+    color:red;
+}
+div{
+    background-color: yellowgreen;
+    width: 80%;
+    height: 20%;
 }
