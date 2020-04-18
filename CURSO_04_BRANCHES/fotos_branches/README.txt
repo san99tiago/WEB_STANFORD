@@ -1,0 +1,3 @@
+CARPETA DE FOTOS...
+En esta carpeta nos encontramos con multiples fotos asociadas a la creacion y manejo de branches.
+El objetivo es recordar la metdologia y poder repasarla con facilidad en un futuro.
