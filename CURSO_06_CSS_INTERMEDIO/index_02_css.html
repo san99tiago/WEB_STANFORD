@@ -5,16 +5,28 @@
         <meta charset="UTF-8">
         <!-- De esta manera agregamos archivo "main.css" para tener estilos visuales mejores -->
         <style>
-
+            /* @media print permite editar propiedades de los estilos al imprimir pagina */
+            @media print {
+                .no-imprimir{
+                    display:none;
+                }
+                .imprimir-negro{
+                    color: black;
+                }
+            }
+            h1{
+                color: blue;
+            }
 
         </style>
         <title>CSS intermedio</title>
     </head>
     <body>
-        <h1>CONDICIONES CAMBIANTES AL IMPRIMIR PAGINIA...</h1>
+        <!-- Se notaran cambios en titulo y en parrafo final al imprimir pagina web -->
+        <h1 class="imprimir-negro">CONDICIONES CAMBIANTES AL IMPRIMIR PAGINIA...</h1>
         <p>El objetivo es generar páginas web que tengan contenido que al navegar se vea...</p>
         <p>...pero que al imprimir la pagina no se vea o cambie su estilo!!</p>
-        <br><br>
+        <br>
         <p class="no-imprimir">Este parrafo al imprimir, NO se va a ver</p>
     </body>
 </html>
