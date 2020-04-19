@@ -11,11 +11,17 @@
                 body {
                     background-color: lightgreen;
                 }
+                h1::before {
+                    content: "CONDICIONES CAMBIANTES AL CAMBIAR TAMAÑO VISTA";
+                }
             }
             /* Se cambia color, dependiendo de pantalla (en este caso menos de 500px) */
-            @media (max-width: 719) {
+            @media (max-width: 719px) {
                 body {
-                    background-color: red;
+                    background-color: lightskyblue;
+                }
+                h1::before {
+                    content: "ESTOY EN VISTA PEQUE";
                 }
             }
 
@@ -24,7 +30,7 @@
         <title>CSS intermedio</title>
     </head>
     <body>
-        <h1>CONDICIONES CAMBIANTES AL CAMBIAR TAMANNO VISTA</h1>
+        <h1></h1>
         <p>Esta pagina debe adaptar su color  segun el tamanno total de la pantalla vista.</p>
         <p>Trata de encoger la pantalla!!!!!!!</p>
     </body>
