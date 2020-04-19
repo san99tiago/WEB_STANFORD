@@ -9,32 +9,36 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         
         <style>
-            /* Implica que estoy en pantalla grande de almenos 720px */
-            @media (min-width: 720px) {
-                body {
-                    background-color: lightgreen;
-                }
-                h1::before {
-                    content: "CONDICIONES CAMBIANTES AL CAMBIAR TAMAÑO VISTA";
-                }
+            /* Creamos contenedor con capacidades "Flex", que permite hacer "wrap" al final de la linea */
+            .container {
+                display: flex;
+                flex-wrap: wrap;
             }
-            /* Se cambia color, dependiendo de pantalla (en este caso menos de 500px) */
-            @media (max-width: 719px) {
-                body {
-                    background-color: lightskyblue;
-                }
-                h1::before {
-                    content: "ESTOY EN VISTA PEQUE";
-                }
+            /* Creamos estilos cualquier hijo inmediado tipo "p" de "container" */
+            .container > p {
+                background-color: lightskyblue;
+                font-size: 20px;
+                margin: 20px;
+                padding: 10px;
+                width: 200px;
             }
-
 
         </style>
         <title>CSS intermedio</title>
     </head>
     <body>
-        <h1></h1>
-        <p>Esta pagina debe adaptar su color  segun el tamanno total de la pantalla vista.</p>
-        <p>Trata de encoger la pantalla!!!!!!!</p>
+        <div class="container">
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+            <p>La disciplina, tarde o temprano, vencerá a la inteligencia.</p>
+
+        </div>
     </body>
 </html>
