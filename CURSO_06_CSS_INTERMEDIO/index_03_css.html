@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- PAGINA QUE LOGRA ADAPTARSE SUTILMENTE A CAMBIOS DE TAMANNO -->
+<html>
+    <head>
+        <!--De esta manera agregamos codificacion para utilizar caracteres latinos (y de español)-->
+        <meta charset="UTF-8">
+        <!-- De esta manera agregamos archivo "main.css" para tener estilos visuales mejores -->
+        <style>
+            /* Implica que estoy en pantalla grande de almenos 720px */
+            @media (min-width: 720px) {
+                body {
+                    background-color: lightgreen;
+                }
+            }
+            /* Se cambia color, dependiendo de pantalla (en este caso menos de 500px) */
+            @media (max-width: 719) {
+                body {
+                    background-color: red;
+                }
+            }
+
+
+        </style>
+        <title>CSS intermedio</title>
+    </head>
+    <body>
+        <h1>CONDICIONES CAMBIANTES AL CAMBIAR TAMANNO VISTA</h1>
+        <p>Esta pagina debe adaptar su color  segun el tamanno total de la pantalla vista.</p>
+        <p>Trata de encoger la pantalla!!!!!!!</p>
+    </body>
+</html>
