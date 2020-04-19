@@ -24,6 +24,17 @@
                 background-color: lightcoral;
                 color: blue;
             }
+            /* Agregamos estilo y funcionalidad de cambio color al boton (al estar encima) */
+            button {
+                width: 150px;
+                height: 50px;
+                font-size:16px;
+                font-weight: bold;
+                background-color: yellow;
+            }
+            button:hover {
+                background-color: red;
+            }
 
         </style>
         <title>CSS intermedio</title>
@@ -44,10 +55,14 @@
             <li>Item GAMMA</li>
         </ul>
 
+        <!-- Simulamos ingreso datos de usuario. Nota "<br> es salto de linea (como \n)" -->
         INGRESO DATOS:<br>
-        Nombre: <input name="name" type="text" placeholder="Nombre">
-        <br>Apellido:<input name="last_name" type="text" placeholder="Apellido">
-        <br>Edad:<input name="age" type="number" placeholder="Edad">
+        Nombre: <input name="name" type="text" placeholder="Nombre"><br>
+        Apellido:<input name="last_name" type="text" placeholder="Apellido"><br>
+        Edad___:<input name="age" type="number" placeholder="Edad"><br>
+        <br><br>
+        <button>TOCAME</button>
+
 
     </body>
 </html>
