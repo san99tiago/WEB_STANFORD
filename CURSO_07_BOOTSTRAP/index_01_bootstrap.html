@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- PAGINA PARA COMENZAR A TRABAJAR CON BOOTSTRAP-->
+<html>
+    <head>
+        <!--De esta manera agregamos codificacion para utilizar caracteres latinos (y de español)-->
+        <meta charset="UTF-8">
+        
+        <!-- Esta linea siguiente indica capacidad de adaptarse al tamanno del viewport del equipo -->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <!-- Ahora agregamos estilos a traves de Bootstrap (facilita desarrollo) -->
+        <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <style>
+            h1 {
+                text-align:center;
+                background-color: turquoise;
+                padding:10px;
+            }
+
+            h3 {
+                text-align: center;
+                background-color: lightsteelblue;
+            }
+        </style>
+        <title>CSS BOOTSTRAP</title>
+    </head>
+    <body>
+        <h1>PRIMER ARCHIVO CREADO CON BOOTSTRAP</h1>
+        <!-- Creamos division con formato "row" para indicarlo como "fila" -->
+        <!-- Luego, indicamos cada seccion de espacio "col-3" (recordar que Bootstrap maneja 12 en total) -->
+        <div class="row">
+            <div class ="col-3">
+                <h3>SECCIÓN 1 : HTML</h3>
+                <p>En primer lugar, un HTML significa "Hyper Text Markup Language".</p>
+                <p>Su creador fue Tim Berners-Lee, en el año 1989.</p>
+                <p>Fue creado para crear, editar y compartir archivos científicos.</p>
+                <p>Consiste en múltiples etiquetas que funcionan como identificadores, para procesar la información dentro de ellas.</p>
+                <p>Sin embargo, con el paso del tiempo se fue viendo la necesidad de crear estilos y mejorarlo visualmente. </p>
+            </div>
+            <div class ="col-3">
+                <h3>SECCIÓN 2</h3>
+            </div>
+            <div class ="col-3">
+                <h3>SECCIÓN 3</h3>
+            </div>  
+            <div class ="col-3">
+                <h3>SECCIÓN 4</h3>
+            </div>  
+        </div>
+    </body>
+</html>
