@@ -15,6 +15,16 @@
                 color: blue;
                 font-size: x-large;   
             }
+            /* Agregamos estilo personalizado a inputs */
+            input[type=text] {
+                background-color: lightgreen;
+                color: black;
+            }
+            input[type=number] {
+                background-color: lightcoral;
+                color: blue;
+            }
+
         </style>
         <title>CSS intermedio</title>
     </head>
@@ -33,6 +43,11 @@
             <li>Item BETA</li>
             <li>Item GAMMA</li>
         </ul>
- 
+
+        INGRESO DATOS:<br>
+        Nombre: <input name="name" type="text" placeholder="Nombre">
+        <br>Apellido:<input name="last_name" type="text" placeholder="Apellido">
+        <br>Edad:<input name="age" type="number" placeholder="Edad">
+
     </body>
 </html>
