@@ -15,7 +15,7 @@ https://code.visualstudio.com/download
 
 ## Probar los códigos
 
-Es suficiente con descargar el repository correr los códigos directamete desde cualquier explorador web.
+Es suficiente con descargar el repository y correr los códigos directamete desde cualquier explorador web.
 
 
 ## Autores
@@ -23,7 +23,7 @@ Es suficiente con descargar el repository correr los códigos directamete desde 
 El proyecto fue realizado a través de un curso gratuito de desarrollo web, brindado por Harvard University.
 Se puede encontrar en:
 ```
-https://code.visualstudio.com/download
+https://www.youtube.com/playlist?list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5
 ```
 Sin embargo, las ediciones del código principal y los proyectos en este, fueron elaborados por:
 * **Santiago García Arango** 
