@@ -1,4 +1,32 @@
-// Este es un archivo de SASS (Syntactically Awesome StyleSheets)
+// Este es un archivo para compilar con SASS (Syntactically Awesome StyleSheets)
 // Lo utilizaremos para poder tener mas control del CSS
 // Ademas permite crear variables y mas componentes de mucha ayuda.
+// OJO: pero para usarlo, debemos CREAR el archivo CSS, con SCSS este NO es suficiente...
+// Se crea desde terminal, con comando:  >>sass nombre_archivo.scss  nombre_archivo.css
+// Si queremos dejarlo "automatizado": >>sass --watch nombre_archivo.scss:nombre_archivo.css
 
+//Ahora esta es una de las magias: (variables para cambiar TODO facilmente!!!!):
+$color_fondo_header: turquoise;
+$color_letra_header: black;
+$padding_grande: 20px;
+$padding_peque: 10px;
+
+$color_fondo_h1: lightsteelblue;
+
+
+h1 {
+    text-align:center;
+    background-color: $color_fondo_header;
+    color: $color_letra_header;
+    padding: $padding_grande;
+}
+
+h3 {
+    text-align: center;
+    background-color: $color_fondo_h1;
+}
+.elegante{
+    padding: $padding_peque;
+    text-align:center;
+    font-weight: bold;
+}
