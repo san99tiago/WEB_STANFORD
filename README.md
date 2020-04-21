@@ -1,4 +1,38 @@
 # WEB_INICIANDO
-Comienzos de desarrollo web. Basado en curso gratuito de Harvard: CS50's Web programming with Python and Javascript 2018.
-El objetivo es plasmar una ruta de aprendizaje detallada en el progreso del desarrollo web.
-Además, al mismo tiempo, estaré trabajando con GIT para ir interiorizando este control de versiones en mi propio repository.
+
+
+Encontrarás parte de mi aprendizaje web desde lo básico, hasta proyectos más elaborados.
+
+
+### Pre-requisitos
+
+Realmente el proceso comienza con HTML y CSS básicos y va aumentando su complejidad.
+Recomiendo elaborar códigos en VS Code o un editor integrado con github.
+
+```
+https://code.visualstudio.com/download
+```
+
+## Probar los códigos
+
+Es suficiente con descargar el repository correr los códigos directamete desde cualquier explorador web.
+
+
+## Autores
+
+El proyecto fue realizado a través de un curso gratuito de desarrollo web, brindado por Harvard University.
+Se puede encontrar en:
+```
+https://code.visualstudio.com/download
+```
+Sin embargo, las ediciones del código principal y los proyectos en este, fueron elaborados por:
+* **Santiago García Arango** 
+
+
+## Licencia
+
+La licencia de estos proyectos es totalmente OpenSource, libre para el que quiera usarlos.
+
+## Extras
+
+* La disciplina, tarde o temprano, vencerá a la inteligencia.
