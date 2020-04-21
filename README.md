@@ -1,10 +1,8 @@
-```diff
-- # WEB_INICIANDO
-```
-# <span style="color:red">WEB_INICIANDO</span>
+# <span style="color:orange">WEB_INICIANDO</span>
 
 Encontrarás parte de mi aprendizaje web desde lo básico, hasta proyectos más elaborados.
 
+:rocket:
 
 ### Pre-requisitos
 
