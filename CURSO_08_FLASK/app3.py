@@ -15,4 +15,5 @@ def index():
 #Ahora, el servidor nos muestra un saludo, seguno lo ingresado respectivamente
 @app.route("/<string:nombre>")
 def saludar(nombre):
-    return("BUENOS DIAS, " + nombre)
+    nombre = nombre.upper()
+    return("BUENOS DIAS, " + nombre + " <3")
