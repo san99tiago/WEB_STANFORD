@@ -1,4 +1,7 @@
-# WEB_INICIANDO
+```diff
+- # WEB_INICIANDO
+
+```
 
 
 Encontrarás parte de mi aprendizaje web desde lo básico, hasta proyectos más elaborados.
