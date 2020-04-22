@@ -10,4 +10,5 @@ app = Flask(__name__)
 #Indicamos funcion asociada a la ruta por defecto "/" (osea si NO tiene nada de ruta adicional)
 @app.route("/")
 def index():
+    # Con esta funcion interna de flask vamos a renderizar un html desde flask (conectarlo)
     return( render_template("index_04.html") )

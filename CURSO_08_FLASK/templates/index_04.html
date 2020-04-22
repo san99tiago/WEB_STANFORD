@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         
         <!-- Esta linea siguiente indica capacidad de adaptarse al tamanno del viewport del equipo -->
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width-device-width, initial-scale=1.0"> -->
         
         <!-- Ahora agregamos estilos a traves de Bootstrap (facilita desarrollo) -->
         <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
@@ -34,8 +34,15 @@
 
             }
 
-            .centrado , h4 {
+            .centrado , p {
+                text-align: justify;
+
+            }
+            h4 {
                 text-align: center;
+            }
+            img {
+                width: 100%;
             }
 
         </style>
@@ -49,13 +56,28 @@
         <!-- Luego, indicamos cada seccion de espacio segun el tamanno (ya sea largo o pequenno) -->
         <!-- Recordar que las columnas con bootstrap tienen total de 12 espacios propios -->
         <div class="row">
-                <div class ="col-4">
+                <div class ="col-3">
+                    <img src="{{url_for('static', filename='imgs/FOTO_FLASK.png')}}">
                 </div>
                 <div class ="col-4">
-                    <h3>IOT</h3>
+                    <h3>FLASK</h3>
+                    <p>Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, 
+                        with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja 
+                        and has become one of the most popular Python web application frameworks.
+                        Flask offers suggestions, but doesn't enforce any dependencies or project layout. It is up to the developer 
+                        to choose the tools and libraries they want to use. There are many extensions provided by the community that 
+                        make adding new functionality easy.</p>
+                    <p>Sin embargo, el objetivo de flask es comenzar a entender poco a poco todos los conceptos maravillosos del mundo
+                        backend web, pero una vez lo dominemos, iremos al gran gigante de DJANGO!</p>
+                    </p>
                 </div>  
                 <div class ="col-4">
-                    <h3>EDM</h3>
+                    <h3>DJANGO</h3>
+                    <p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built 
+                        by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing 
+                        your app without needing to reinvent the wheel. It’s free and open source.</p>
+                    <img src="imgs/FOTO_DJANGO.png ">
+
                 </div>  
         </div>
 
