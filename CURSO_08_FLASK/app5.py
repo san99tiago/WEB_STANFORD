@@ -35,7 +35,7 @@ def index():
     VARIABLE_CANTIDAD_NOMBRES = random.randint(3,20)
     #Creamos vector nombres, para poder almacenar en este, la cantidad aleatoria de todos estos nombres
     VECTOR_NOMBRES = []
-    for i in range(VARIABLE_CANTIDAD_NOMBRES):
+    for _ in range(VARIABLE_CANTIDAD_NOMBRES):
         #Creamos la cantidad de nombres aleatorias elegidas y cada uno con un nombre y 2 apellidos
         VECTOR_NOMBRES.append( random.choice(NOMBRES) + " " + random.choice(APELLIDOS) + " " + random.choice(APELLIDOS) + "." )
 
