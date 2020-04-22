@@ -1,0 +1,24 @@
+<<<<<<<<<<<<<<FLASK: NOTAS IMPORTANTES>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Autor: Santiago Garcia Arango
+------------------------------------------------------------------
+ESTOS CODIGOS AHORA COMIENZAN A SER MAS DINAMICOS (correr solamente a traves de flask, de lo contrario habran errores)
+
+En primer lugar, Flask se crea directamente en archivos de lenguaje Python :)
+
+Se debe descargar libreria de Flask (puede ser con  >>pip install flask    desde la terminal en Scripts de Python)
+
+Flask permite crear framework de trabajo simple, y nos brinda la posibilidad de unir archivos HTML con dependencias estaticas como imagenes.
+
+Los archivos HTML que se quieran incorporar, deben hacerse siempre desde app en python, a traves de funcion de libreria llamada:
+"render_template("ARCHIVO_A_UNIR.html")
+Esto implica que se deben tener estos archivos ".html" guardados directamente en carpeta "templates", de lo contario, habra error.
+
+Si se quieren agregar imagenes, ver ejemplo de "app4.py", donde se agregar imagenes.
+
+Las variables que podemos ahora utilizar, se crean normalmente en archivo de "app_algo.py", y se deben declarar dentro del render_template asociado.
+Esto implica que a la hora de crear este HTML, se vincularan variables automaticamente, pero deben existir congruentemente en HTML...
+Es decir, al crear archivo en python, se deben llamar variables en la creacion del render_template() asi:
+"render_template("ARCHIVO_A_UNIR.html", nombre_variable=nombre_variable)
+y ademas, en archvio HTML se debe recibir y procesar esta variable donde se desee usar asi (ejemplo):
+<h1> {{nombre_variable}} </h1>
+Esto implica que al renderizar los html, tambien agregar estos vinculos con las variables desde python (ver "app4.py")
