@@ -24,7 +24,9 @@
             h1 {
                 background-color: #00DDFF;
                 text-align: center;
-                padding: 10px;
+                padding-top: 0%;
+                padding-bottom: 0%;
+                border: none;
                 font-family: 'Bangers', cursive;
             }
 
@@ -44,19 +46,27 @@
             img {
                 width: 100%;
             }
-
         </style>
 
 
         <title>FLASK INTEGRADO</title>
     </head>
     <body>
-        <h1>PRIMER ARCHIVO TIPO HTML CONECTADOR DESDE FLASK</h1>
+
+        <!-- AHORA AGREGAREMOS UNA VARIABLE DIRECTAMENTE DESDE LA CONEXION HECHA POR FLASK!!!!-->
+        <!-- Es fundamental crearla entre los corchetes (dobles), y darle el nombre asociado a "app4.py" -->
+        <!-- entonces estos funcionan como un "placeholder" de la variable -->
+        <h1>PRIMER ARCHIVO TIPO HTML CONECTADOR DESDE FLASK <br>
+            {{ VARIABLE_DESDE_FLASK }}</h1>
+
         <!-- Creamos division con formato "row" para indicarlo como "fila" -->
         <!-- Luego, indicamos cada seccion de espacio segun el tamanno (ya sea largo o pequenno) -->
         <!-- Recordar que las columnas con bootstrap tienen total de 12 espacios propios -->
         <div class="row">
                 <div class ="col-3">
+                    <!-- AHORA VIENE ALGO FUNDAMENTAL: -->
+                    <!-- Las imagenes se deben almacenar en carpeta "static" porque hacer referencia a algo estatico -->
+                    <!-- Se deben agregar de la siguiente forma: -->
                     <img src="{{url_for('static', filename='imgs/FOTO_FLASK.png')}}">
                 </div>
                 <div class ="col-4">
@@ -76,7 +86,9 @@
                     <p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built 
                         by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing 
                         your app without needing to reinvent the wheel. It’s free and open source.</p>
-                    <img src="imgs/FOTO_DJANGO.png ">
+                    <!-- Las imagenes se deben almacenar en carpeta "static" porque hacer referencia a algo estatico -->
+                    <!-- Se deben agregar de la siguiente forma: -->
+                   <img src="{{url_for('static', filename='imgs/FOTO_DJANGO.png')}}">
 
                 </div>  
         </div>
