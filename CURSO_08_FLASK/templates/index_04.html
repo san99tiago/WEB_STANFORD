@@ -12,6 +12,34 @@
         <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
+        <!-- Agregamos fuente bacana para el titulo del h1 principal -->
+        <!-- Recordar que esto lo hacemos MUY facil con google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <!-- Como tendremos pocos estilos, NO creare archivo css, sino que lo hare aqui mismo -->
+        <style>
+            body {
+                background-color: lightcyan;
+            }
+            h1 {
+                background-color: #00DDFF;
+                text-align: center;
+                padding: 10px;
+                font-family: 'Bangers', cursive;
+            }
+
+            h3 {
+                background-color: #419DFF;
+                text-align: center;
+
+            }
+
+            .centrado , h4 {
+                text-align: center;
+            }
+
+        </style>
+
 
         <title>FLASK INTEGRADO</title>
     </head>
@@ -19,53 +47,26 @@
         <h1>PRIMER ARCHIVO TIPO HTML CONECTADOR DESDE FLASK</h1>
         <!-- Creamos division con formato "row" para indicarlo como "fila" -->
         <!-- Luego, indicamos cada seccion de espacio segun el tamanno (ya sea largo o pequenno) -->
+        <!-- Recordar que las columnas con bootstrap tienen total de 12 espacios propios -->
         <div class="row">
-            <div class ="col-lg-4  col-sm-12">
-                <h3>SECCIÓN 1 : HTML</h3>
-                <p>En primer lugar, un HTML significa "Hyper Text Markup Language".</p>
-                <p>Su creador fue Tim Berners-Lee, en el año 1989.</p>
-                <p>Fue creado para crear, editar y compartir archivos científicos.</p>
-                <p>Consiste en múltiples etiquetas que funcionan como identificadores, para procesar la información dentro de ellas.</p>
-                <p>Sin embargo, con el paso del tiempo se fue viendo la necesidad de crear estilos y mejorarlo visualmente. </p>
-            </div>
-            <div class ="col-lg-4  col-sm-12">
-                <h3>SECCIÓN 2 : CSS</h3>
-                <p>Es por esto que apareció CSS para mejorar estos archivos preliminares en html.</p>
-                <p>CSS significa "Cascading Style Sheet.</p>
-                <p>Es de suma importancia, porque permite lograr editar y agregarle estilos y layouts al HTML plano.</p>
-                <p>Además, existen muchas ayudas que hoy en día podemos utilizar como "templates" OpenSource.</p>
-                <p>Uno de los Templates más famosos es Bootstrap (con el que hicimos este Layout).</p>
-            </div>
-            <div class ="col-lg-4  col-sm-12">
-                <h3>SECCIÓN 3 : BACKEND</h3>
-                <p>El backend es lo que se encarga de hacer los procesos, métodos y funciones que corren directamente en servidor.</p>
-                <p>Permite lograr hacer que las páginas web tengan esa capacidad de interactuar y efectuar algoritmos "de fondo".</p>
-                <p>De esto no sé mucho aún, pero sé que se puede desarrollar en entornos como Java, JavaScript, Python, PHP, C, etc.</p>
-            </div>  
-
+                <div class ="col-4">
+                </div>
+                <div class ="col-4">
+                    <h3>IOT</h3>
+                </div>  
+                <div class ="col-4">
+                    <h3>EDM</h3>
+                </div>  
         </div>
 
         <br>
         <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
         <div class="container col-12">
-            <div class="elegante alert-danger">
-                SANTIAGO
+            <div class="alert alert-secondary" role="alert">
+                <h4>¡Cada vez vas teniendo más elementos para haccer grandes proyectos! (Recuerda practicar)</h4>
             </div>
         </div>
 
-        <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
-        <div class="container col-12">
-            <div class="elegante alert-success">
-                GARCIA
-            </div>
-        </div>
-
-        <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
-        <div class="container col-12">
-            <div class="elegante alert-warning">
-                ARANGO
-            </div>
-        </div>  
 
     </body>
 </html>
