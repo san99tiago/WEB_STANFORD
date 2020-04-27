@@ -53,50 +53,30 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-dark bg-dark">
-            <a>INDEX 06 A</a>
-        </nav>
         <!-- AHORA AGREGAREMOS UNA VARIABLE DIRECTAMENTE DESDE LA CONEXION HECHA POR FLASK!!!!-->
         <!-- Es fundamental crearla entre los corchetes (dobles), y darle el nombre asociado desde "app6.py" -->
         <!-- entonces estos funcionan como un "placeholder" de la variable -->
-        <h1>INDEX A HTML CONECTADO DESDE FLASK <br>
+        <h1>INDEX PRINCIPAL 06 (A) <br>
             {{ VARIABLE_DESDE_FLASK }}</h1>
 
-        <!-- Creamos division con formato "row" para indicarlo como "fila" -->
-        <!-- Luego, indicamos cada seccion de espacio segun el tamanno (ya sea largo o pequenno) -->
-        <!-- Recordar que las columnas con bootstrap tienen total de 12 espacios propios -->
-        <div class="row">
-                <div class ="col-3">
-                    <!-- AHORA VIENE ALGO FUNDAMENTAL: -->
-                    <!-- Las imagenes se deben almacenar en carpeta "static" porque hacer referencia a algo estatico -->
-                    <!-- Se deben agregar de la siguiente forma: -->
-                    <img src="{{url_for('static', filename='imgs/FOTO_FLASK.png')}}">
-                </div>
-                <div class ="col-4">
-                    <h3>EXPLICACION ACTIVIDAD</h3>
-                    <p>El objetivo de esta pequeña página, es crear una cantidad aleatoria de nombres aleatorios a través de Flask 
-                        como intermediario del backend. La cantidad de nombres a generar es:</p>
-                    <!--Lo siguiente corresponde a variable enviada desde conexion con Flask  -->
-                    <h2>{{VARIABLE_CANTIDAD_NOMBRES}}</h2>
-                </div>  
-                <div class ="col-4">
-                    <h3>NOMBRES GENERADOS</h3>
-                        <ol>
-                            <!-- A continuacion efectuamos comando encargado de realizar FOR LOOP, directamente en el servidor -->
-                            <!-- Esto se genera, antes de compilar el archivo HTML, permitiendo mayor variedad y versatilidad -->
-                            {% for nombre in VECTOR_NOMBRES %}
-                                <li>{{nombre}}</li>
-                            {% endfor %}
+        <p>El objetivo de esta página, es que puedas navegar a otras direcciones
+            a través de la función estratégica definida en "app6.py".
+        </p>
 
-                        </ol>
+        <!-- Agregamos seccion nav para la correcta conexion con los links de otras pags -->
+        <nav>
+            <li>
+                <!-- NOTA: A continuacion indicamos forma correcta de conectar a otro index a traves... -->
+                <!-- ...de app6.py y la funcion "otro_index()" con el respectivo HMTL a ir  -->
+                <a href="{{ url_for('otro_index') }}">OTRA RUTA</a>
+            </li>
 
-                </div>  
-        </div>
-
+        </nav>
+         
         <br>
         <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
         <div class="container col-12">
-            <div class="alert alert-secondary" role="alert">
+            <div class="alert alert-success" role="alert">
                 <h4>¡Cada vez vas teniendo más elementos para haccer grandes proyectos! (Recuerda practicar)</h4>
             </div>
         </div>
