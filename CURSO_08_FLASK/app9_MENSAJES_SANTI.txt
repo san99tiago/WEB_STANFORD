@@ -1,0 +1,22 @@
+AQUI VA A QUEDAR EL REGISTRO DE TODOS MIS MENSAJES CREADOS DESDE MI PAGINA WEB CON APP9.PY!!!!!!!
+-------------------------------------------------------------------------------------------------
+27/04/2020(03:47AM): Este es mi primer mensaje para mi diario ultrasecreto
+27/04/2020(03:51AM): Ahora estoy haciendo otra prueba luego de reiniciar servidor flask
+27/04/2020(03:52AM): Estos mensajes son muy interesantes
+27/04/2020(03:52AM): Ojala algun dia pueda comprar mi propio servidor
+27/04/2020(03:52AM): En este momento estoy aprendiendo a realizar POST y GET desde el ESP8266-01
+27/04/2020(03:52AM): En este momento estoy aprendiendo a realizar POST y GET desde el ESP8266-01
+27/04/2020(03:53AM): Lo bueno de mi diario de mensajes, es que quedan registrados en un txt!!!!
+27/04/2020(03:53AM): Estos mensajes van agregandose a mi pagina web y a mi PC local
+27/04/2020(03:54AM): No tengo ni idea si voy a poder relacionar FLASK con DJANGO
+27/04/2020(03:54AM): El PIC18F2550 me gusto mas que el PIC16F887
+27/04/2020(03:55AM): Es increible pensar en como se fue desarrollando el protocolo IP y HTTP
+27/04/2020(04:08AM): Este mensaje lo estoy escribiendo en otra sesion
+27/04/2020(04:08AM): Es increible saber TODOO lo que hay detras de estas paginas web y sus servidores
+27/04/2020(04:09AM): Ahora lo que sigue es optimizar este tipo de cosas y utilizar BASES DE DATOS
+27/04/2020(04:09AM): Hoy es el cumple de Oscar
+27/04/2020(04:09AM): Ya es hora de dormir jajajaja
+27/04/2020(04:09AM): Me esta gustando mucho esto, aunque este apenas es el comienzo
+27/04/2020(04:10AM): He aprendido demasiado con este curso de Harvard!
+27/04/2020(04:10AM): Estamos en medio de la cuarentena causada por el COVID19
+27/04/2020(04:14AM): Poco a poco se pueden ir haciendo grandes proyectos a traves de estos pilares basicos de paginas web
