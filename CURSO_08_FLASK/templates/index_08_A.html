@@ -1,0 +1,22 @@
+<!-- INDEX 08_A PARA OBTENER INFO USUARIO Y HACER EL POST -->
+<!-- Debemos ademas conectarla con "index_08_layout.html", pues esta... -->
+<!-- ...tienen el layout comun entre formulario e index final -->
+
+<!-- Realizamos correcta conexion (extension) desde el layout comun -->
+{% extends "index_08_layout.html" %}
+
+<!-- Indicamos todo lo del formulario a desde bloque indicado en layout -->
+{% block INFO_PRINCIPAL %}
+    <!-- Respectivo form para ingreso del nombre del usuario -->
+    <!-- Recordar que al presionar, realizaremos el "POST" hacia app8.py -->
+    <!-- este POST se hace como "method=post" y llamamos a funcion en app8.py  -->
+    <form action="{{ url_for('otro_index') }}" method="post">
+        <!-- OJO: ver que el <name> de estos son "nombre" y "edad"... -->
+        <!-- ...es importante porque los utilizaremos en "app8.py" -->
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <input type="number" name="edad" placeholder="Ingrese su edad">
+        <button>LISTO</button>
+    </form>
+
+{% endblock %}
+

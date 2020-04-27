@@ -1,0 +1,21 @@
+<!-- INDEX 08_B PARA MOSTRAR RESULTADO LUEGO DE HABER LLENADO INFO EN INDEX_08_A -->
+<!-- Debemos ademas conectarla con "index_08_layout.html", pues esta... -->
+<!-- ...tienen el layout comun entre formulario e index final -->
+
+<!-- Realizamos correcta conexion (extension) desde el layout comun -->
+{% extends "index_08_layout.html" %}
+
+<!-- Indicamos todo lo del formulario a desde bloque indicado en layout -->
+{% block INFO_PRINCIPAL %}
+    <!-- Ahora mostramos resultados despues de haber realizado el procesamiento... -->
+    <h4>GRACIAS POR HABER REALIZADO EL FORMULARIO!</h4>
+
+    <!-- Mostramos mensaje personalizado. -->
+    <p>
+        {{nombre}} , gracias por haber terminado exitosamente el formulario.
+        Felicitaciones por tus {{edad}} años vividos, eres increíble.
+    </p>
+    <br><br><br><br>
+
+
+{% endblock %}
