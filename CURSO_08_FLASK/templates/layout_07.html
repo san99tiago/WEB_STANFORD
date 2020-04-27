@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- PAGINA PRINCIPAL DE LAYOUT COMUN QUE COMPARTE EL "index_07_A.html" y el "index_07_B.html" -->
+<!-- ENTONCES TODO EL DISENNO ROBUSTO SE DEBE CREAR AQUI... -->
+<!-- Esta entonces queda como plantilla comun para todas las paginas que heredan el layout -->
+<!-- Y los pequennos cambios se realizaran directamente en cada index derivado o "hijo" -->
+<html>
+    <head>
+        <!--De esta manera agregamos codificacion para utilizar caracteres latinos (y de español)-->
+        <meta charset="UTF-8">
+        
+        <!-- Esta linea siguiente indica capacidad de adaptarse al tamanno del viewport del equipo -->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <!-- Ahora agregamos estilos a traves de Bootstrap (facilita desarrollo) -->
+        <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- Agregamos fuente bacana para el titulo del h1 principal -->
+        <!-- Recordar que esto lo hacemos MUY facil con google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <!-- Como tendremos pocos estilos, NO creare archivo css, sino que lo hare aqui mismo -->
+        <style>
+            body {
+                background-color: lightcyan;
+            }
+            h1 {
+                background-color: #00DDFF;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: none;
+                font-family: 'Bangers', cursive;
+            }
+
+            p {
+                text-align: justify;
+
+            }
+            h4 {
+                text-align: center;
+            }
+
+        </style>
+
+
+        <title>TEST LAYOUTS</title>
+    </head>
+    <body>
+
+        <!-- AHORA INDICAMOS QUE EL HEADER PRINCIPAL SE ESPECIFICARA SEGUN "block TITULO" -->
+        <!-- Esto significa que otros archivos index, deberan aprovecharse de esto para indicarlo -->
+        <!-- De esta forma, mantenemos la plantilla del layout aqui, y los cambios sutiles en otros index -->
+        <!-- VARIABLE_DESDE_FLASK permite traer variable desde app7.py, y compilarla correctamente -->
+        <h1>{% block TITULO %}{% endblock %}<br>
+            {{ VARIABLE_DESDE_FLASK }}</h1>
+
+        <div class="container-fluid col-12">
+            <p>El objetivo de esta página, es que puedas navegar a otras direcciones
+                a través de la función estratégica definida en "app7.py".<br>
+                Una genialidad, es que ambas paginas tienen un LAYOUT común, el cual nos permite
+                tener archivos repetitivos bajo una misma plantilla y solamente cambiarles sus pequeños
+                detalles que puedan cambiar!!!!
+    
+            </p>
+        </div>
+
+
+
+        <!-- Agregamos seccion nav para la correcta conexion con los links de otras pags -->
+        <nav class="container-fluid col-10 offset-2">
+            <li>
+                <!-- Agregamos otro bloque variable segun el index respectivo llamado... -->
+                <!-- De tal forma que SOLAMENTE esto cambiara, y de resto, el layout es comun -->
+                {% block LINK_RESPECTIVO %}{% endblock %}
+            </li>
+
+        </nav>
+         
+        <br>
+        <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
+        <div class="container-fluid col-12">
+            <div class="alert alert-success" role="alert">
+                <h4>¡Cada vez vas teniendo más elementos para haccer grandes proyectos! (Recuerda practicar)</h4>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
