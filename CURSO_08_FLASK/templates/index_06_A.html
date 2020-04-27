@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- PAGINA PARA DEMOSTRAR CONEXION CORRECTA A TRAVES DE FLASK Y ALGUNOS ASPECTOS CON VARIABLES-->
+<html>
+    <head>
+        <!--De esta manera agregamos codificacion para utilizar caracteres latinos (y de español)-->
+        <meta charset="UTF-8">
+        
+        <!-- Esta linea siguiente indica capacidad de adaptarse al tamanno del viewport del equipo -->
+        <!-- <meta name="viewport" content="width-device-width, initial-scale=1.0"> -->
+        
+        <!-- Ahora agregamos estilos a traves de Bootstrap (facilita desarrollo) -->
+        <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- Agregamos fuente bacana para el titulo del h1 principal -->
+        <!-- Recordar que esto lo hacemos MUY facil con google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <!-- Como tendremos pocos estilos, NO creare archivo css, sino que lo hare aqui mismo -->
+        <style>
+            body {
+                background-color: lightcyan;
+            }
+            h1 {
+                background-color: #00DDFF;
+                text-align: center;
+                padding-top: 0%;
+                padding-bottom: 0%;
+                border: none;
+                font-family: 'Bangers', cursive;
+            }
+
+            h3 {
+                background-color: #419DFF;
+                text-align: center;
+
+            }
+
+            p {
+                text-align: justify;
+
+            }
+            h4 , h2 {
+                text-align: center;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+
+
+        <title>FLASK 06 A</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <a>INDEX 06 A</a>
+        </nav>
+        <!-- AHORA AGREGAREMOS UNA VARIABLE DIRECTAMENTE DESDE LA CONEXION HECHA POR FLASK!!!!-->
+        <!-- Es fundamental crearla entre los corchetes (dobles), y darle el nombre asociado desde "app6.py" -->
+        <!-- entonces estos funcionan como un "placeholder" de la variable -->
+        <h1>INDEX A HTML CONECTADO DESDE FLASK <br>
+            {{ VARIABLE_DESDE_FLASK }}</h1>
+
+        <!-- Creamos division con formato "row" para indicarlo como "fila" -->
+        <!-- Luego, indicamos cada seccion de espacio segun el tamanno (ya sea largo o pequenno) -->
+        <!-- Recordar que las columnas con bootstrap tienen total de 12 espacios propios -->
+        <div class="row">
+                <div class ="col-3">
+                    <!-- AHORA VIENE ALGO FUNDAMENTAL: -->
+                    <!-- Las imagenes se deben almacenar en carpeta "static" porque hacer referencia a algo estatico -->
+                    <!-- Se deben agregar de la siguiente forma: -->
+                    <img src="{{url_for('static', filename='imgs/FOTO_FLASK.png')}}">
+                </div>
+                <div class ="col-4">
+                    <h3>EXPLICACION ACTIVIDAD</h3>
+                    <p>El objetivo de esta pequeña página, es crear una cantidad aleatoria de nombres aleatorios a través de Flask 
+                        como intermediario del backend. La cantidad de nombres a generar es:</p>
+                    <!--Lo siguiente corresponde a variable enviada desde conexion con Flask  -->
+                    <h2>{{VARIABLE_CANTIDAD_NOMBRES}}</h2>
+                </div>  
+                <div class ="col-4">
+                    <h3>NOMBRES GENERADOS</h3>
+                        <ol>
+                            <!-- A continuacion efectuamos comando encargado de realizar FOR LOOP, directamente en el servidor -->
+                            <!-- Esto se genera, antes de compilar el archivo HTML, permitiendo mayor variedad y versatilidad -->
+                            {% for nombre in VECTOR_NOMBRES %}
+                                <li>{{nombre}}</li>
+                            {% endfor %}
+
+                        </ol>
+
+                </div>  
+        </div>
+
+        <br>
+        <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
+        <div class="container col-12">
+            <div class="alert alert-secondary" role="alert">
+                <h4>¡Cada vez vas teniendo más elementos para haccer grandes proyectos! (Recuerda practicar)</h4>
+            </div>
+        </div>
+
+
+    </body>
+</html>
