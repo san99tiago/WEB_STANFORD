@@ -9,11 +9,11 @@ Se debe descargar libreria de Flask (puede ser con  >>pip install flask    desde
 
 Flask permite crear framework de trabajo simple, y nos brinda la posibilidad de unir archivos HTML con dependencias estaticas como imagenes.
 
-Los archivos HTML que se quieran incorporar, deben hacerse siempre desde app en python, a traves de funcion de libreria llamada:
+Los archivos HTML que se quieran incorporar, deben hacerse siempre desde app en python, a traves de funcion de libreria de FLASK llamada:
 "render_template("ARCHIVO_A_UNIR.html")
 Esto implica que se deben tener estos archivos ".html" guardados directamente en carpeta "templates", de lo contario, habra error.
 
-Si se quieren agregar imagenes, ver ejemplo de "app4.py", donde se agregar imagenes.
+Si se quieren agregar imagenes, ver ejemplo de "app4.py", donde se agregan y explican proceso de agregar imagenes.
 
 Las variables que podemos ahora utilizar, se crean normalmente en archivo de "app_algo.py", y se deben declarar dentro del render_template asociado.
 Esto implica que a la hora de crear este HTML, se vincularan variables automaticamente, pero deben existir congruentemente en HTML...
@@ -22,3 +22,14 @@ Es decir, al crear archivo en python, se deben llamar variables en la creacion d
 y ademas, en archvio HTML se debe recibir y procesar esta variable donde se desee usar asi (ejemplo):
 <h1> {{nombre_variable}} </h1>
 Esto implica que al renderizar los html, tambien agregar estos vinculos con las variables desde python (ver "app4.py")
+
+En "app5.py" mostraremos forma interesante de crear unos ciclos "for" directamente en HTML, que se compilan a traves del servidor de FLASK (ejemplo bacano)
+
+En "app6.py" desarrollamos forma correcta de relacionar multiples direcciones HTML para multiples paginas (no solo un unico archivo HTML)
+
+En ejemplo "app7.py" creamos un "LAYOUT" comun, de tal forma que podemos tener una base robusta de HTML, y tener multiples derivados de esta...
+...con base en algo comun y solamente cambiando lo especifico (muy util cuando se trabajan con muchos HTML variados.
+
+En ejemplo "app8.py" desarrollamos proceso para realizar un POST desde un HTML respectivo y luego procesarlo y redireccionar al usuario a una nueva...
+...direccion con el respectivo procesamiento de la informacion que este agrego en el formulario.
+(ademas, este POST es solamente viable desde HTML principal, es decir, si accedo a url desde "afuera", NO me redirecciona correctamente)
