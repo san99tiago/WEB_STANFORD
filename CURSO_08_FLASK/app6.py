@@ -14,7 +14,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 #Ahora tenemos control del puerto a emplear y activamos el debug para facilitar proceso
-app.run(port=5000 , debug=True)
+# Tambien cambiamos el host a nuestro gusto
+app.run(port=5000 , debug=True, host='0.0.0.0')
 
 
 #Indicamos funcion asociada a la ruta por defecto "/" (osea si NO tiene nada de ruta adicional)
