@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- PAGINA PARA INDEX 06 PARTE A -->
+<!-- PAGINA PARA INDEX 06 PARTE B -->
 <!-- PAGINA PARA DEMOSTRAR CONEXION CORRECTA A TRAVES DE FLASK Y ALGUNOS ASPECTOS CON VARIABLES-->
 <html>
     <head>
@@ -42,14 +42,14 @@
         </style>
 
 
-        <title>FLASK 06 A</title>
+        <title>FLASK 06 B</title>
     </head>
     <body>
 
         <!-- AHORA AGREGAREMOS UNA VARIABLE DIRECTAMENTE DESDE LA CONEXION HECHA POR FLASK!!!!-->
         <!-- Es fundamental crearla entre los corchetes (dobles), y darle el nombre asociado desde "app6.py" -->
         <!-- entonces estos funcionan como un "placeholder" de la variable -->
-        <h1>INDEX PRINCIPAL 06 (A) <br>
+        <h1>INDEX PRINCIPAL 06 (B) <br>
             {{ VARIABLE_DESDE_FLASK }}</h1>
 
         <p>El objetivo de esta página, es que puedas navegar a otras direcciones
@@ -59,10 +59,10 @@
         <!-- Agregamos seccion nav para la correcta conexion con los links de otras pags -->
         <nav class="container-fluid col-12 offset-2">
             <li>
-                <!-- NOTA: A continuacion indicamos forma correcta de conectar a otro index a traves... -->
-                <!-- ...de app6.py y la funcion "otro_index()" con el respectivo HMTL a ir  -->
+                <!-- NOTA: A continuacion indicamos forma correcta de conectar index principal a traves... -->
+                <!-- ...de app6.py y la funcion "index()" con el respectivo HMTL principal  -->
                 <!-- VENTAJA: luego NO se requiere cambiar este codigo, sino solamente el de conexion en app6.py -->
-                <a href="{{ url_for('otro_index') }}">OTRA RUTA SECUNDARIA</a>
+                <a href="{{ url_for('index') }}">VOLVER A RUTA PRINCIPAL</a>
             </li>
 
         </nav>
@@ -70,7 +70,7 @@
         <br>
         <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
         <div class="container col-12">
-            <div class="alert alert-primary" role="alert">
+            <div class="alert alert-success" role="alert">
                 <h4>¡Cada vez vas teniendo más elementos para haccer grandes proyectos! (Recuerda practicar)</h4>
             </div>
         </div>
