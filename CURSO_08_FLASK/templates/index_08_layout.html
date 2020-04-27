@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Pagina de layout comun para conectar a "index_08_A.html" e "index_08_B.html" -->
+<!-- Se crearan entonces POST hacia app8.py , generando un backend mas complejo -->
+
+<html>
+    <head>
+        <!--De esta manera agregamos codificacion para utilizar caracteres latinos (y de español)-->
+        <meta charset="UTF-8">
+        
+        <!-- Esta linea siguiente indica capacidad de adaptarse al tamanno del viewport del equipo -->
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        
+        <!-- Ahora agregamos estilos a traves de Bootstrap (facilita desarrollo) -->
+        <!-- LINK PAGINA BOOTSTRAP:  https://www.bootstrapcdn.com/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- Agregamos fuente bacana para el titulo del h1 principal -->
+        <!-- Recordar que esto lo hacemos MUY facil con google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+        <!-- Como tendremos pocos estilos, NO creare archivo css, sino que lo hare aqui mismo -->
+        <style>
+            body {
+                background-color: lightcyan;
+            }
+            h1 {
+                background-color: #00DDFF;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: none;
+                font-family: 'Bangers', cursive;
+            }
+
+            p {
+                text-align: justify;
+
+            }
+            h4 {
+                text-align: center;
+            }
+
+        </style>
+
+
+        <title>TEST LAYOUTS</title>
+    </head>
+    <body>
+
+        <!-- VARIABLE_DESDE_FLASK permite traer variable desde app7.py, y compilarla correctamente -->
+        <h1>PRIMEROS POSTS REQUESTS<br>
+            {{ VARIABLE_DESDE_FLASK }}</h1>
+
+        <div class="container-fluid col-12">
+            <p>El objetivo de esta pagina es poder lograr realizar un POST que interactue con
+                "app8.py" y que a traves de esta, cambiemos el HMTL a nuestro gusto. 
+            </p>
+        </div>
+
+        <br>
+
+        <!-- OJO: ahora esto es lo que cambia entre "index_08_A.html" e "index_08_B.html" -->
+        <!-- Se debe realizar conexion en archivos respectivos, para modificar esto -->
+        <div class="container-fluid col-12">
+
+            <!-- Ahora dejamos este espacio para indicar en los HTML la info necesaria -->
+            <!-- "index_08_A.html" se encarga de llenar el formulario y obtener info (realizar POST) -->
+            <!-- "index_08_B.html" se encarga de mostrar esta info procesada y analizada en "app8.py" -->
+            {% block INFO_PRINCIPAL %}{% endblock %}
+        </div>
+        
+
+        <br>
+        <!-- Otra ayuda de Bootstrap es crear "contenedores" y estilarlos tipo "alertas" (ayuda a generar estilo bacano) -->
+        <div class="container-fluid col-12">
+            <div class="alert alert-success" role="alert">
+                <h4>¡Cada vez vas teniendo más elementos para hacer grandes proyectos! (Recuerda practicar)</h4>
+            </div>
+        </div>
+
+
+    </body>
+</html>
+
