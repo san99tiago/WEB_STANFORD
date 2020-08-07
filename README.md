@@ -1,4 +1,4 @@
-# <span style="color:orange">WEB_INICIANDO</span>
+# <span style="color:orange">WEB_STANFORD</span>
 
 Encontrarás parte de mi aprendizaje web desde lo básico, hasta proyectos más elaborados.
 
